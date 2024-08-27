@@ -3,10 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso Python - LugoCode</title>
+    <title>Contacto - LugoCode</title>
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="62x64" href="images/logos/LugoCode-Icon.png">
+
+    <style>
+        body {
+            background-color: #16161a; 
+        }
+        .contact-form {
+            background-color: #ffffff; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            background-color: #7f5af0;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #6d4c9b;
+        }
+    </style>
 </head>
 
 <body>
@@ -39,24 +83,20 @@
     </header>
 
     <main>
-        <div class="main-content">
-            <div class="main-text">
-                <h2>Curso Python</h2>
-                <p>
-                    Conoce Python, uno de los lenguajes de programación más populares y versátiles. Este curso te enseñará desde los conceptos básicos hasta técnicas avanzadas en el desarrollo con Python.
-                </p>
-            </div>
-            <div class="course-info">
-                <h3>Contenido del Curso</h3>
-                <ul>
-                    <li>Introducción a Python</li>
-                    <li>Tipos de Datos y Operaciones</li>
-                    <li>Control de Flujo y Funciones</li>
-                    <li>Manejo de Archivos</li>
-                    <li>Programación Orientada a Objetos</li>
-                    <li>Bibliotecas y Módulos</li>
-                </ul>
-            </div>
+        <div class="contact-form">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </main>
 
@@ -65,9 +105,9 @@
             <div class="bloc footer-services">
                 <h3>Servicios</h3>
                 <ul class="liste-services">
-                    <li><a href="../Secundarias/cursos.html">Comencemos</a></li>
-                    <li><a href="../Secundarias/index.html">Front-end</a></li>
-                    <li><a href="../Secundarias/python.html">Back-end</a></li>
+                    <li><a href="#">Comencemos</a></li>
+                    <li><a href="#">Front-end</a></li>
+                    <li><a href="#">Back-end</a></li>
                 </ul>
             </div>
     
