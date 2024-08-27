@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Quicksand:wght@300..700&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
+
+
 body {
-    background-color: #1e1e1e; /* Fondo diferente para las páginas secundarias */
+    background-color: rgb(22, 22, 26);
     font-family: "Quicksand", sans-serif;
     color: #94a1b2;
+    min-height: 100vh;
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    padding-bottom: 40px;
+
 }
 
 header {
@@ -20,26 +28,28 @@ header {
     align-items: center;
     padding: 40px 0;
     min-height: 100px;
-    background-color: rgb(22, 22, 26, 0.6993);
-}
+    background: linear-gradient(to right, rgba(127, 90, 240, 0.31) -80%, rgba(127, 90, 240, 0) 100%);
 
-.logoPage {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #fffffe;
-}
+    .logoPage {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #fffffe;
 
-.logoPage img {
-    border-radius: 60px;
-    margin-right: 25px;
-    transition: transform 0.3s ease-in;
-    box-shadow: 0px 0px 1000px 20px rgba(127, 90, 240, 0.31);
-}
+        img {
+            border-radius: 60px;
+            margin-right: 25px;
+            transition: transform 0.3s ease-in;    
+            box-shadow: 0px 0px 1000px 20px rgba(127, 90, 240, 0.31);
+        }
 
-.logoPage img:hover {
-    transform: scale(1.25);
-    box-shadow: 0px 0px 1000px 20px rgba(127, 90, 240, 0.51);
+        img:hover{
+            transform: scale(1.25);
+            box-shadow: 0px 0px 1000px 20px rgba(127, 90, 240, 0.51);
+
+            
+        }
+    }
 }
 
 .menu {
@@ -131,20 +141,29 @@ main {
     padding-left: 20px;
 }
 
+
 footer {
-    background-color: #16161a;
     color: #fffffe;
     padding: 20px 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgba(50, 50, 146, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
 }
 
 .container-footer {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 90%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: static;
 }
 
 .bloc {
@@ -165,17 +184,17 @@ footer {
     padding: 0;
 }
 
-.bloc ul li {
+.bloc li {
     margin-bottom: 10px;
 }
 
-.bloc ul li a {
+.bloc a {
     color: #94a1b2;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.bloc ul li a:hover {
+.bloc a:hover {
     color: #2cb67d;
 }
 
@@ -189,6 +208,7 @@ footer {
     font-size: 14px;
     color: #94a1b2;
 }
+  
 
 
 h1, h2, h3 {
